@@ -23,6 +23,7 @@ int main()
     {
         cout << foodItem[i] << "\n\t";
     }
+    cout << "Which item do you want to chose? " << endl;
     
     return 0;
 }
