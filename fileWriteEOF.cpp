@@ -16,11 +16,11 @@ int main(){
     string fName, lName;
     ofstream nameWriter;
 
+    nameWriter.open("FilName.txt", ios::out|ios::app);//If file name exist nor new file will be created
     while(cin >> fName >> lName ){
-        nameWriter.open("FilName.txt", ios::out|ios::app);//If file name exist nor new file will be created
         nameWriter << fName << " " << lName << endl;
-        nameWriter.close();
     }
+    nameWriter.close();
 
     //to stop the looping process (or If you don't have any data to type) press ctrl+z;
 
